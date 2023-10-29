@@ -1,0 +1,4 @@
+demo|demo@demo.com|$2y$10$h2kdTi0jlf33H1qDfVTgceiFPqt3Q7nF6nru0ECBYA8iytAtuBfs6
+admin|admin@admin.com|$2y$10$0MOm3OsroxuL8Im9qKWf3OCTcNIxmSkWTWVd6tjpgCVfliTGDC2Am
+manager|manager@manager.com|$2y$10$nwXLEn1miXhV2lk25V0cNeqx78prMnleEHkPQsVnBdBhGaiG2zXNi
+tarek|tarek@hasan.com|$2y$10$wNej89ePfNKCLUdgT90coOtBd8ZrGtf/DR4TeaG9Spq6/10rFox7q

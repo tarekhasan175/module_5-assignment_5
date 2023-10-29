@@ -1,21 +1,30 @@
-<?php
-session_start();
+<!DOCTYPE html>
+<html lang="en">
 
-if (!isset($_SESSION['username'])) {
-    header('Location: login.php');
-    exit;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roles Management</title>
+    <link rel="stylesheet" type="text/css" href="CSS/roles_style.css">
+</head>
 
-// Check if the user is an admin
-$adminUsers = ['admin_username1', 'admin_username2'];
-if (!in_array($_SESSION['username'], $adminUsers)) {
-    // If the user is not an admin, deny access
-    echo "Access Denied! You are not an admin.";
-    exit;
-}
+<body>
+    <h2>Roles Management</h2>
+    <form method="post" action="dashboard_admin.php">
+        <label for="username">User Name</label>
+        <input type="username" name="username" placeholder="Username" required><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Email" required><br>
+        
+        <label for="role">Role</label>
+        <select name="roles">
+            <option value="">Select a role</option>
+            <option value="admin">Admin</option>
+            <option value="manager">Manager</option>
+            <option value="user">User</option>
+        </select>
+        <input type="submit" value="Update">
+    </form>
+</body>
 
-// Role management functionality here
-?>
-
-<h2>Role Management</h2>
-<!-- Implement role management features -->
+</html>

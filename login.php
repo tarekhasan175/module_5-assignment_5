@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             list($username, $storedEmail, $storedPassword) = explode('|', $user);
             if ($email === $storedEmail && password_verify($password, $storedPassword)) {
                 $_SESSION['username'] = $username;
-                header('Location: dashboard_user.php'); // Redirect to the appropriate dashboard
+                header('Location: dashboard_user.php');
                 exit;
             }
         }
@@ -55,8 +55,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
     </div>
     <div class="info">
-        <h3>Admin: email - admin@admin.com  Pass - 12345</h3>
-        <h3>Manager: email - manager@manager.com  Pass - 12345</h3>
+        <h3><strong>Admin:</strong> email - <i>admin@admin.com</i>  Pass - <i>12345</i></h3>
+        <h3><strong>Manager:</strong> email - <i>manager@manager.com</i>  Pass - <i>12345</i></h3>
     </div>
 </body>
 

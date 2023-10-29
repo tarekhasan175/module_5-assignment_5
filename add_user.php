@@ -2,18 +2,14 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'post') {
-    // Validation and data handling here
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-    // Save user data to a text file (users.txt)
     $userData = "$username|$email|$password\n";
     file_put_contents('users.txt', $userData, FILE_APPEND);
 
-    // Redirect to login page
     header('Location: login.php');
-    // header('Refresh: 0; url=login.php');
     exit;
 }
 ?>
