@@ -1,0 +1,79 @@
+.admin{
+    background-color: rgb(23, 141, 141);
+    width: 75%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: start;
+    margin: 0 auto;
+    color: white;
+}
+
+.welcome, .add-user{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+}
+
+.add-user{
+    border: none;
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+button[type="logout"], button[type="submit"]{
+    width: auto;
+    padding: 5px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+button[type="logout"]{
+    background-color: red;
+}
+
+button[type="submit"]{
+    background-color: green;
+}
+
+
+.user-list, .admin-list{
+    background-color: rgb(33, 155, 155);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+th{
+    border-right: 1px solid white;
+    background-color: rgb(23, 145, 145);
+}
+
+td{
+    border-right: 1px solid white;
+    color: black;
+}
+table{
+    background-color: rgb(4, 221, 221);
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: start;
+  }
+
